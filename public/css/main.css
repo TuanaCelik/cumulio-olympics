@@ -71,7 +71,7 @@ body {
 
 /* Sidebar styling */
 #sidebar {
-  background: #00a750;
+  background: #8b2130;
   overflow: auto;
   user-select: none;
 }
@@ -163,7 +163,7 @@ body {
   font-weight: 600;
   flex: 1 0 auto;
   background-color: rgba(255, 255, 255, 0.3);
-  color: #00a750;
+  color: #8b2130;
   cursor: pointer;
   border-radius: 0.25rem !important;
   transition: background-color 0.3s ease;
