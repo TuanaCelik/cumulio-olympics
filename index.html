@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="/css/main.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- add cumul.io embed script or install & use cumulio-react, cumulio-react-native or angular lib ngx-cumulio -->
+    <script src="https://cdn-a.cumul.io/js/cumulio.min.js"></script>
+    <title>Cumul.io Olympics App</title>
+  </head>
+  <body>
+    <div id="gated-content" class="d-flex align-items-stretch w-100">
+      <div id="sidebar" class="d-flex flex-column h-100 text-white">
+        <!-- Company logo and name -->
+        <div class="mb-4">
+          <div class="company-logo">
+            <img src="/images/olympic_flag.svg" onclick="toggleMenu(false)" />
+          </div>
+        </div>
+        <div class="p-4 d-flex flex-column flex-grow-1">
+          <!-- menu list-->
+          <h6>Welcome to the Cumul.io Olympics Dashboards</h6>
+          <div class="pages small">
+            <ul class="list-unstyled text-uppercase p-0">
+              <li
+                id="history"
+                onclick="loadSummerOlympicsPage(this)"
+                class="menu-item active"
+              >
+                Summer Olympics History
+              </li>
+              <li id="teams" onclick="loadTeamCompare(this)" class="menu-item">
+                Compare Olympic Teams
+              </li>
+            </ul>
+          </div>
+          <div class="flex-fill"></div>
+          <!-- Settings for integrated dashboard -->
+          <div class="language-settings">
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="label small text-uppercase mb-0 font-weight-bold">
+                  dashboard Language
+                </p>
+              </div>
+              <div
+                class="
+                  d-flex
+                  justify-content-stretch
+                  text-uppercase text-center
+                "
+              >
+                <div
+                  class="language-btn active mr-1"
+                  onclick="changeLanguage('en', this)"
+                >
+                  en
+                </div>
+                <div
+                  class="language-btn mx-1"
+                  onclick="changeLanguage('fr', this)"
+                >
+                  fr
+                </div>
+                <div
+                  class="language-btn ml-1"
+                  onclick="changeLanguage('nl', this)"
+                >
+                  nl
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="powered-by text-center p-3">
+            <div class="mb-2">Powered by</div>
+            <a target="_blank" href="https://www.cumul.io/">
+              <img src="images/main_cumulio_logo_with_text.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Dashboard container -->
+      <div class="main-container text-center">
+        <div class="page-title text-left font-weight-bold">
+          <img
+            src="/images/logo_color.svg"
+            class="menu-toggle d-inline-block d-lg-none my-3 mr-3"
+          />
+          <div class="d-inline-block my-3">Olympics Insights</div>
+        </div>
+        <div class="dashboard-outer-container">
+          <div id="dashboard-container"></div>
+        </div>
+      </div>
+      <div id="overlay" onclick="toggleMenu(false)"></div>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
