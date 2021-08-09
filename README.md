@@ -5,7 +5,7 @@ Welcome to the demo website we have created for historic Olympics data up to the
 ### To run:
 
 1. `npm install`
-2. Create a `.env` file in the root directory and add the following from your [Cumul.io](https://cumul.io/main) and [Spotify Developer](https://developer.spotify.com/) accounts:
+2. Create a `.env` file in the root directory and add the following from your [Cumul.io](https://cumul.io/main) account:
 
 From Cumul.io:
 
