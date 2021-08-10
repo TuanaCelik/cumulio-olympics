@@ -41,10 +41,7 @@ const getDashboardAuthorizationToken = async () => {
 };
 
 const loadSummerOlympicsPage = async (elem) => {
-  const authorizationToken = await getDashboardAuthorizationToken();
-  if (authorizationToken.id && authorizationToken.token) {
-    loadDashboard(authorizationToken.id, authorizationToken.token);
-  }
+  loadDashboard(null, null, dashboardId);
   document.querySelectorAll(".menu-item").forEach((el) => {
     el.classList.remove("active");
   });
@@ -53,14 +50,11 @@ const loadSummerOlympicsPage = async (elem) => {
 };
 
 const loadTeamCompare = async (elem) => {
-  const authorizationToken = await getDashboardAuthorizationToken();
-  if (authorizationToken.id && authorizationToken.token) {
-    loadDashboard(
-      authorizationToken.id,
-      authorizationToken.token,
-      teamDashboardId
-    );
-  }
+  loadDashboard(
+    null,
+    null,
+    teamDashboardId
+  );
   document.querySelectorAll(".menu-item").forEach((el) => {
     el.classList.remove("active");
   });
