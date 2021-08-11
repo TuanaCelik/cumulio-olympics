@@ -1,5 +1,18 @@
 <html>
   <head>
+    <!-- Open Graph data -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cumul.io Olympics App" />
+    <meta property="og:url" content="http://olympics.cumul.io/" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="http://olympics.cumul.io/images/og_image.png" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://olympics.cumul.io/" />
+    <meta property="twitter:title" content="Cumul.io Olympics App" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="http://olympics.cumul.io/images/og_image.png" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -86,10 +99,17 @@
       </div>
       <!-- Dashboard container -->
       <div class="main-container text-center">
-        <div onclick=toggleMenu(true) class="page-title text-left font-weight-bold d-flex align-items-center">
-          <div
-            class="menu-toggle d-inline-block d-lg-none my-3 mr-3"
-          ></div>
+        <div
+          onclick="toggleMenu(true)"
+          class="
+            page-title
+            text-left
+            font-weight-bold
+            d-flex
+            align-items-center
+          "
+        >
+          <div class="menu-toggle d-inline-block d-lg-none my-3 mr-3"></div>
           <div class="d-inline-block my-3">Olympics Insights</div>
         </div>
         <div class="dashboard-outer-container">
